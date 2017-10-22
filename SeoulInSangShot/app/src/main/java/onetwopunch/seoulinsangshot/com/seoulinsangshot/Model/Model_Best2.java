@@ -7,11 +7,7 @@ package onetwopunch.seoulinsangshot.com.seoulinsangshot.Model;
 public class Model_Best2 {
     String url;
     String likes;
-
-    public Model_Best2(String url, String likes) {
-        this.url = url;
-        this.likes = likes;
-    }
+    String area;
 
     public String getUrl() {
         return url;
@@ -19,5 +15,15 @@ public class Model_Best2 {
 
     public String getLikes() {
         return likes;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public Model_Best2(String url, String likes) {
+
+        this.url = url;
+        this.likes = likes;
     }
 }

@@ -108,12 +108,13 @@ public class Fragment_Detail_Best extends Fragment {
                 tempList = repo.getList();
 
                 for (int i = 0; i < tempList.size(); i++) {
-                   /* if (tempList.get(i).getArea().equals(initials)) {
-                   //ex) 만약 area가 YS-1 이라면
-                    }*/
-                    String url = tempList.get(i).getUrl();
-                    String likes = tempList.get(i).getLikes();
-                    adapterBestList2.add(new Model_Best2(url, likes));
+                    if (tempList.get(i).getArea().equals(initials)) {
+                        //ex) 만약 area가 YS-1 이라면
+                        String url = tempList.get(i).getUrl();
+                        String likes = tempList.get(i).getLikes();
+                        adapterBestList2.add(new Model_Best2(url, likes));
+                    }
+
                 }
 
                 for (int i = 0; i < DetailActivity.bestList.size(); i++) {
